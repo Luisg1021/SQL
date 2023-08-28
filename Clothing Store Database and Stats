@@ -1,0 +1,30 @@
+-CREATE clothing Store Database
+
+CREATE TABLE Clothing ( id INTEGER PRIMARY KEY, brand TEXT, color TEXT, stock INTEGER, price NUMERIC);
+
+INSERT INTO clothing VALUES
+(1,'carhart','black',35,200),
+(2,'uniqlo', 'white',60,300),
+(3,'american eagle','gray',40,220),
+(4,'vintage','black',20,320),
+(5,'hollister','white',50, 150),
+(6,'hollister','black',75, 100),
+(7,'carhart','blue',5,650),
+(8,'gucci','brown',2,1200),
+(9,'gucci','black',5,2200),
+(10,'gucci','white',6,1600),
+(11,'gucci','blue',12,400),
+(12,'dolce gabanna','black',0, 4500),
+(13,'ovo','white',15,600),
+(14,'ovo','black',32,850),
+(15,'ovo','red',12,250)
+;
+
+-Display the order by price
+
+SELECT * FROM clothing ORDER BY price;
+
+-What is the average price of clothing store?
+SELECT AVG(price)FROM clothing;
+
+
